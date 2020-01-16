@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+void p(char *i);
+int main()
+{
+
+    char s[20];
+    gets(s);
+    p(s);
+}
+void p(char *i)
+{
+   char j;
+   int k;
+   k=strlen(i);
+   k=k-1;
+for(j=k;j>=0;j--)
+    {
+        printf("%c",*(i+j));
+
+    }
+
+}
